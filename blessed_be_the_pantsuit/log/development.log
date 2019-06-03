@@ -1,0 +1,4 @@
+  [1m[35m (817.6ms)[0m  [1m[35mCREATE DATABASE "blessed_be_the_pantsuit_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (671.7ms)[0m  [1m[35mCREATE DATABASE "blessed_be_the_pantsuit_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
