@@ -20,7 +20,7 @@ This is my final project assignment for General Assembly's Software Engineering 
 
 
 ### Description
-I am creating a Twitter deck that will display the tweets of female politicians.
+I am creating an app for users to look up female politicians.
 
 ### User Story
 As a __woman aged 25-45 years old__
@@ -34,7 +34,7 @@ Day | Deliverable
 Day 1: Friday    | Idea, Research
 Day 2: Saturday    | ERD, Wireframes
 Day 3: Sunday   |  User Story, Pseudo Code
-Day 4: Monday | Project Proposal/Approval, Coding
+Day 4: Monday | Project Proposal/Approval, Revision, Coding
 Day 5: Tuesday  | Coding, Working Prototype
 Day 6: Wednesday    | Editing, Final Testing
 Day 7: Thursday    | App Completed, Deployment
@@ -49,23 +49,22 @@ For this project, I will be using Ruby on Rails and React.
 
 *Implementation Problems:* Making the API and having a keyword search option are the main issues.
 
-*Explanation to Solve the Problems:*  The API will be created using the Twitter gem.
+*Explanation to Solve the Problems:*  The politician's info API will be created from ProPublica Congress API and Google Civic Info API. The MapBox API will show the areas/state the officials serve.
 
 ### Entity Relationship Diagram (ERD)
 https://github.com/shenae/blessed-be-the-pantsuit/blob/master/BlessedBeThePantsuitERD.png
 
 ### MVP
-    *  Twitter API 
-	*  Keyword Search/Submit
-	*  Favorite
+    *  User Account
+	*  Female Politician API
+	*  Favorited Politicians
 
 ### Post MVP
-    *  Twitter bot 
+    *  User can send letter to politicians
 
 ### Wireframes
-- https://wireframe.cc/w9fdtN - Example tweet page
-- https://wireframe.cc/7rkpeE - Search page
+- https://wireframe.cc/w9fdtN - Main page
+- https://wireframe.cc/7rkpeE - User page
 
 ### Deployment
 This project will be deployed on Heroku.
-
