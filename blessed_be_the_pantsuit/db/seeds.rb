@@ -5,3 +5,52 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+politicians = Politician.create([
+
+{
+    "short_title": "Sen.",
+    "first_name": "Tammy",
+    "last_name": "Baldwin",
+    "gender": "F",
+    "party": "D",
+    "twitter_account": "SenatorBaldwin",
+    "url": "https://www.baldwin.senate.gov",
+    "contact_form": "https://www.baldwin.senate.gov/feedback",
+    "state": "WI"
+},
+
+{
+    "short_title": "Sen.",
+    "first_name": "Kirsten",
+    "last_name": "Gillibrand",
+    "gender": "F",
+    "party": "D",
+    "twitter_account": "SenGillibrand",
+    "url": "https://www.gillibrand.senate.gov",
+    "contact_form": "http://www.gillibrand.senate.gov/contact/",
+    "state": "NY"
+},
+
+{
+    "short_title": "Sen.",
+    "first_name": "Kamala",
+    "last_name": "Harris",
+    "gender": "F",
+    "party": "D",
+    "twitter_account": "SenKamalaHarris",
+    "url": "https://www.harris.senate.gov",
+    "contact_form": "https://www.harris.senate.gov/content/contact-senator",
+    "state": "CA"
+},
+{
+    "short_title": "Sen.",
+    "first_name": "Elizabeth",
+    "last_name": "Warren",
+    "gender": "F",
+    "party": "D",
+    "twitter_account": "SenWarren",
+    "url": "https://www.warren.senate.gov",
+    "contact_form": "https://www.warren.senate.gov/?p=email_senator",
+    "state": "MA"
+}
+])

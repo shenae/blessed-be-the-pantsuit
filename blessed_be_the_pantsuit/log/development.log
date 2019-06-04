@@ -2,3 +2,77 @@
   ↳ bin/rails:9
   [1m[35m (671.7ms)[0m  [1m[35mCREATE DATABASE "blessed_be_the_pantsuit_test" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
+  [1m[35m (1161.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (43.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (18.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5096910973965247290)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190603192616)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (52.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password" character varying, "city" character varying, "state" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190603192616_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190603192616"]]
+  ↳ bin/rails:9
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateFavorites (20190603192654)
+  [1m[35m (11.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (69.0ms)[0m  [1m[35mCREATE TABLE "favorites" ("id" bigserial primary key, "politician" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190603192654_create_favorites.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190603192654"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePoliticians (20190603215616)
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (32.1ms)[0m  [1m[35mCREATE TABLE "politicians" ("id" bigserial primary key, "short_title" character varying, "first_name" character varying, "last_name" character varying, "gender" character varying, "party" character varying, "twitter_account" character varying, "url" character varying, "contact_form" character varying, "state" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190603215616_create_politicians.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190603215616"]]
+  ↳ bin/rails:9
+  [1m[35m (37.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-03 22:28:15.885657"], ["updated_at", "2019-06-03 22:28:15.885657"]]
+  ↳ bin/rails:9
+  [1m[35m (20.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5096910973965247290)[0m
+  ↳ bin/rails:9
+  [1m[35m (20.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPolitician Create (2.9ms)[0m  [1m[32mINSERT INTO "politicians" ("short_title", "first_name", "last_name", "gender", "party", "twitter_account", "url", "contact_form", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["short_title", "Sen."], ["first_name", "Tammy"], ["last_name", "Baldwin"], ["gender", "F"], ["party", "D"], ["twitter_account", "SenatorBaldwin"], ["url", "https://www.baldwin.senate.gov"], ["contact_form", "https://www.baldwin.senate.gov/feedback"], ["state", "WI"], ["created_at", "2019-06-03 22:28:33.853514"], ["updated_at", "2019-06-03 22:28:33.853514"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPolitician Create (0.5ms)[0m  [1m[32mINSERT INTO "politicians" ("short_title", "first_name", "last_name", "gender", "party", "twitter_account", "url", "contact_form", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["short_title", "Sen."], ["first_name", "Kirsten"], ["last_name", "Gillibrand"], ["gender", "F"], ["party", "D"], ["twitter_account", "SenGillibrand"], ["url", "https://www.gillibrand.senate.gov"], ["contact_form", "http://www.gillibrand.senate.gov/contact/"], ["state", "NY"], ["created_at", "2019-06-03 22:28:33.872285"], ["updated_at", "2019-06-03 22:28:33.872285"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPolitician Create (0.4ms)[0m  [1m[32mINSERT INTO "politicians" ("short_title", "first_name", "last_name", "gender", "party", "twitter_account", "url", "contact_form", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["short_title", "Sen."], ["first_name", "Kamala"], ["last_name", "Harris"], ["gender", "F"], ["party", "D"], ["twitter_account", "SenKamalaHarris"], ["url", "https://www.harris.senate.gov"], ["contact_form", "https://www.harris.senate.gov/content/contact-senator"], ["state", "CA"], ["created_at", "2019-06-03 22:28:33.875543"], ["updated_at", "2019-06-03 22:28:33.875543"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPolitician Create (0.5ms)[0m  [1m[32mINSERT INTO "politicians" ("short_title", "first_name", "last_name", "gender", "party", "twitter_account", "url", "contact_form", "state", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["short_title", "Sen."], ["first_name", "Elizabeth"], ["last_name", "Warren"], ["gender", "F"], ["party", "D"], ["twitter_account", "SenWarren"], ["url", "https://www.warren.senate.gov"], ["contact_form", "https://www.warren.senate.gov/?p=email_senator"], ["state", "MA"], ["created_at", "2019-06-03 22:28:33.878399"], ["updated_at", "2019-06-03 22:28:33.878399"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPolitician Load (7.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
