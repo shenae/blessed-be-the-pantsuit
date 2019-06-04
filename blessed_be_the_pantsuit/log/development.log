@@ -76,3 +76,462 @@ Migrating to CreatePoliticians (20190603215616)
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:8
   [1m[36mPolitician Load (7.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+Started GET "/quotes" for ::1 at 2019-06-04 10:32:46 -0400
+  [1m[35m (305.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/quotes"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-04 10:36:00 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:36:12 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:37:35 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:40:35 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:43:20 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:45:53 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:46:22 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:50:19 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:52:39 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:54:37 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:54:45 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:55:09 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 10:56:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/politicians"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-04 10:56:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/politicians"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-04 10:56:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/politicians"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-04 10:57:35 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:01:28 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:06:56 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:07:36 -0400
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:11:13 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:11:14 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:11:22 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:13:14 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:13:21 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:16:06 -0400
+  
+SyntaxError (/Users/shenaesimmons/Desktop/general-assembly/unit04/projects/blessed-be-the-pantsuit/blessed_be_the_pantsuit/app/controllers/politicians_controller.rb:24: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/politicians_controller.rb:24: syntax error, unexpected end, expecting end-of-input
+Started GET "/politicians" for ::1 at 2019-06-04 11:16:32 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:18:13 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2019-06-04 11:27:21 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (12.5ms)
+Completed 200 OK in 30ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 11:27:26 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:32:01 -0400
+  [1m[35m (110.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:32:11 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+Started GET "/politicians" for ::1 at 2019-06-04 11:34:43 -0400
+  
+ActionController::RoutingError (undefined local variable or method `​' for PoliticiansController:Class):
+  
+app/controllers/politicians_controller.rb:6:in `<class:PoliticiansController>'
+app/controllers/politicians_controller.rb:1:in `<top (required)>'
+  [1m[36mPolitician Load (33.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+Started GET "/politicians" for ::1 at 2019-06-04 11:38:27 -0400
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PoliticiansController#index as */*
+  Parameters: {"{ \n\t\"user\": {\n\t\t\"username\": \"wayne\",\n\t\t\"email\": \"wayne@fakemail.com\",\n\t\t\"password\": \"fakepassword\",\n\t\t\"password_confirmation\": \"fakepassword\"\n\t}\n}"=>"[FILTERED]"}
+  [1m[36mPolitician Load (24.0ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 67ms (Views: 23.2ms | ActiveRecord: 37.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 11:38:29 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (9.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 68ms (Views: 36.6ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 11:40:09 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (372.3ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 612ms (Views: 68.6ms | ActiveRecord: 520.5ms)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2019-06-04 11:43:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2019-06-04 11:44:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2019-06-04 11:45:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-04 11:54:17 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (52.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 242ms (Views: 129.1ms | ActiveRecord: 52.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 11:54:30 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (3.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 11:54:47 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (7.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 99ms (Views: 70.5ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 11:55:53 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (149.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 194ms (Views: 36.6ms | ActiveRecord: 149.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 11:56:13 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (262.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 307ms (Views: 38.2ms | ActiveRecord: 262.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 11:56:32 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (2.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 22ms (Views: 11.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 12:04:39 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (166.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 201ms (Views: 28.5ms | ActiveRecord: 166.2ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 12:04:51 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (92.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 130ms (Views: 30.5ms | ActiveRecord: 92.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 12:05:02 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (3.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 66ms (Views: 51.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 12:05:11 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (9.3ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 22ms (Views: 12.1ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 12:26:07 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (19.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 49ms (Views: 24.9ms | ActiveRecord: 19.6ms)
+
+
