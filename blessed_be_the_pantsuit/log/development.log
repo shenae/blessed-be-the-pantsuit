@@ -2008,3 +2008,159 @@ Processing by PoliticiansController#index as HTML
 Completed 200 OK in 217ms (Views: 50.5ms | ActiveRecord: 157.0ms)
 
 
+Started GET "/politicians" for ::1 at 2019-06-05 16:47:38 -0400
+  [1m[35m (35.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (29.0ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 258ms (Views: 29.7ms | ActiveRecord: 218.5ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:48:33 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (131.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 175ms (Views: 34.9ms | ActiveRecord: 131.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:49:31 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (118.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 170ms (Views: 43.3ms | ActiveRecord: 118.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:49:45 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (80.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 159ms (Views: 66.4ms | ActiveRecord: 80.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:50:52 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (543.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 591ms (Views: 36.2ms | ActiveRecord: 543.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:52:35 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (579.5ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 645ms (Views: 52.9ms | ActiveRecord: 579.5ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:53:14 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (9.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 255ms (Views: 227.4ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:54:36 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (792.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 883ms (Views: 61.7ms | ActiveRecord: 792.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:54:47 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (41.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 107ms (Views: 60.0ms | ActiveRecord: 41.2ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:56:40 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (409.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 515ms (Views: 89.4ms | ActiveRecord: 409.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:57:19 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (191.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 255ms (Views: 51.7ms | ActiveRecord: 191.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:02:08 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (439.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 827ms (Views: 358.3ms | ActiveRecord: 439.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:03:55 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (819.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 928ms (Views: 89.3ms | ActiveRecord: 819.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:08:21 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (662.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 793ms (Views: 113.9ms | ActiveRecord: 662.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:13:01 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (957.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 1040ms (Views: 73.1ms | ActiveRecord: 957.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:14:16 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (260.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 385ms (Views: 113.7ms | ActiveRecord: 260.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:14:28 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (51.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 108ms (Views: 38.4ms | ActiveRecord: 51.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:14:39 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (91.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 151ms (Views: 52.0ms | ActiveRecord: 91.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:29:31 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (58.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 114ms (Views: 49.0ms | ActiveRecord: 58.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:31:24 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (211.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 263ms (Views: 45.6ms | ActiveRecord: 211.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:32:06 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (188.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 267ms (Views: 72.0ms | ActiveRecord: 188.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 17:37:19 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (283.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 532ms (Views: 229.6ms | ActiveRecord: 283.9ms)
+
+

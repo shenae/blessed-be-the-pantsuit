@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import './App.css';
-// import MapBox from './components/MapBox/MapBox';
+// import './App.css';
+import MapBox from './components/MapBox/MapBox';
 import PoliticiansList from './components/PoliticiansList/PoliticiansList'
+import PoliticianForm from './components/PoliticianForm/PoliticianForm'
 
 class App extends Component {
   constructor() {
@@ -46,11 +47,19 @@ class App extends Component {
     console.log(this.state)
 
     return (
-      <div className="App">
-
+      <div className="columns">
+        <div className="column">
         <PoliticiansList politicians={this.state.data}/>
+      </div>
+      <div className="column">
+                <MapBox politicians={this.state.data} />
+      </div>
+      <div className="column">
+        <PoliticianForm politicians={this.state.data}/>
+      </div>
+
      
-        {/* <MapBox politicianShow={this.state.politiciansData} /> */}
+
       </div>
     );
   }
