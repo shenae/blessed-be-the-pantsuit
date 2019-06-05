@@ -535,3 +535,1476 @@ Processing by PoliticiansController#index as HTML
 Completed 200 OK in 49ms (Views: 24.9ms | ActiveRecord: 19.6ms)
 
 
+Started GET "/politicians" for ::1 at 2019-06-04 13:54:56 -0400
+  [1m[35m (122.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (135.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 826ms (Views: 235.5ms | ActiveRecord: 419.2ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 13:57:06 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (157.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 202ms (Views: 39.0ms | ActiveRecord: 157.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 14:07:41 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (38.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 86ms (Views: 35.9ms | ActiveRecord: 38.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 14:59:25 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (132.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 256ms (Views: 100.7ms | ActiveRecord: 132.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-04 15:39:26 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (27.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 78ms (Views: 35.9ms | ActiveRecord: 27.9ms)
+
+
+  [1m[36mPolitician Load (34.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  [1m[35m (22.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (65.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "shenae"], ["email", "shenae@fakemail.com"], ["created_at", "2019-06-04 20:21:01.222108"], ["updated_at", "2019-06-04 20:21:01.222108"]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (14.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (59.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5096910973965247290)[0m
+  ↳ bin/rails:9
+  [1m[35m (74.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddIndexToUsersEmail (20190604203020)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (397.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20190604203020_add_index_to_users_email.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190604203020"]]
+  ↳ bin/rails:9
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (18.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(5096910973965247290)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5096910973965247290)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddPasswordDigestToUsers (20190604203656)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (126.7ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" character varying[0m
+  ↳ db/migrate/20190604203656_add_password_digest_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190604203656"]]
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(5096910973965247290)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5096910973965247290)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5096910973965247290)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mPolitician Load (0.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/politicians" for ::1 at 2019-06-05 02:43:16 -0400
+  [1m[35m (35.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (22.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 200ms (Views: 79.3ms | ActiveRecord: 114.3ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 02:44:11 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (3.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 41ms (Views: 32.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 02:44:20 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (0.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 02:56:20 -0400
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (15.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 104ms (Views: 54.6ms | ActiveRecord: 45.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 02:56:34 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (259.3ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 324ms (Views: 56.9ms | ActiveRecord: 259.3ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 02:56:43 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (33.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 51ms (Views: 16.3ms | ActiveRecord: 33.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:08:44 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (24.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 68ms (Views: 38.9ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:10:07 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (16.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 68ms (Views: 44.2ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:11:17 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (145.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 226ms (Views: 76.6ms | ActiveRecord: 145.2ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:33:26 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (34.5ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 189ms (Views: 132.4ms | ActiveRecord: 34.5ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:34:33 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (276.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 333ms (Views: 48.7ms | ActiveRecord: 276.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:34:52 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (63.5ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 118ms (Views: 48.2ms | ActiveRecord: 63.5ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:35:50 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (260.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 319ms (Views: 48.5ms | ActiveRecord: 260.2ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:36:10 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (1.8ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:36:24 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (2.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 78ms (Views: 64.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:49:20 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (407.5ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 629ms (Views: 207.6ms | ActiveRecord: 407.5ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:50:16 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (73.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 145ms (Views: 60.3ms | ActiveRecord: 73.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:50:35 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (107.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 149ms (Views: 35.7ms | ActiveRecord: 107.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:52:20 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (348.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 527ms (Views: 172.2ms | ActiveRecord: 348.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:54:07 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (162.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 246ms (Views: 55.2ms | ActiveRecord: 162.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:54:28 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (71.0ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 113ms (Views: 37.1ms | ActiveRecord: 71.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:55:13 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (2619.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 2786ms (Views: 146.1ms | ActiveRecord: 2619.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 03:59:16 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (553.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 737ms (Views: 139.2ms | ActiveRecord: 553.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 04:00:18 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (429.3ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 508ms (Views: 54.3ms | ActiveRecord: 429.3ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 04:00:49 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (218.8ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 291ms (Views: 65.4ms | ActiveRecord: 218.8ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 04:01:22 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (531.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 591ms (Views: 52.6ms | ActiveRecord: 531.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 09:13:35 -0400
+  [1m[35m (17.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (40.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 305ms (Views: 113.4ms | ActiveRecord: 185.3ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 09:47:48 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (52.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 353ms (Views: 205.7ms | ActiveRecord: 52.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 09:58:56 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (42.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 100ms (Views: 49.1ms | ActiveRecord: 42.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 10:02:29 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (231.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 345ms (Views: 98.3ms | ActiveRecord: 231.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 10:15:08 -0400
+Started GET "/politicians" for ::1 at 2019-06-05 10:15:17 -0400
+Processing by PoliticiansController#index as HTML
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (135.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 246ms (Views: 81.7ms | ActiveRecord: 135.6ms)
+
+
+  [1m[36mPolitician Load (178.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 218ms (Views: 38.6ms | ActiveRecord: 178.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 10:17:55 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (478.8ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 548ms (Views: 48.3ms | ActiveRecord: 478.8ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 10:18:03 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (3.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 19ms (Views: 15.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 10:19:56 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (112.3ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 194ms (Views: 64.6ms | ActiveRecord: 112.3ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 10:28:17 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (214.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 338ms (Views: 112.4ms | ActiveRecord: 214.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 10:37:33 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (173.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 316ms (Views: 125.5ms | ActiveRecord: 173.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 11:04:02 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (78.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 293ms (Views: 173.0ms | ActiveRecord: 78.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 11:05:25 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (390.8ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 605ms (Views: 196.3ms | ActiveRecord: 390.8ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 11:06:17 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (289.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 469ms (Views: 165.3ms | ActiveRecord: 289.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 11:13:43 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (74.8ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 179ms (Views: 86.7ms | ActiveRecord: 74.8ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 11:14:12 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (391.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 485ms (Views: 87.8ms | ActiveRecord: 391.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 12:46:58 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (250.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 654ms (Views: 373.0ms | ActiveRecord: 250.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 15:18:37 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (131.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 247ms (Views: 80.3ms | ActiveRecord: 131.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:01:43 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (323.3ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 441ms (Views: 86.4ms | ActiveRecord: 323.3ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:02:36 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (76.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 159ms (Views: 67.5ms | ActiveRecord: 76.1ms)
+
+
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:02:37 -0400
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:02:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:02:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:02:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:03:43 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (145.0ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 223ms (Views: 69.6ms | ActiveRecord: 145.0ms)
+
+
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:03:44 -0400
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:03:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:03:44 -0400
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:03:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:04:13 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (159.8ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 241ms (Views: 70.2ms | ActiveRecord: 159.8ms)
+
+
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:04:15 -0400
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:04:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:04:15 -0400
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:04:15 -0400
+  
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:05:24 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (311.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 379ms (Views: 52.1ms | ActiveRecord: 311.4ms)
+
+
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:05:26 -0400
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:05:26 -0400
+  
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:05:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:05:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:06:13 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (1.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:06:14 -0400
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:06:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:06:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:06:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:06:21 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (104.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 172ms (Views: 48.2ms | ActiveRecord: 104.2ms)
+
+
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:06:22 -0400
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:06:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:06:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:06:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:06:49 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (568.3ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 697ms (Views: 105.0ms | ActiveRecord: 568.3ms)
+
+
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:06:52 -0400
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:06:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:06:52 -0400
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:06:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:09:49 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (339.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 444ms (Views: 87.2ms | ActiveRecord: 339.7ms)
+
+
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:09:51 -0400
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:09:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:09:52 -0400
+  
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:09:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:10:00 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (12.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 48ms (Views: 22.4ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:10:00 -0400
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:10:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/App.js" for 127.0.0.1 at 2019-06-05 16:10:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/src/index.js" for 127.0.0.1 at 2019-06-05 16:10:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/App.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/src/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-05 16:10:14 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (90.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 139ms (Views: 32.2ms | ActiveRecord: 90.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:10:28 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (22.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 52ms (Views: 25.9ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:15:14 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (273.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 468ms (Views: 160.5ms | ActiveRecord: 273.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:15:49 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (601.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 713ms (Views: 96.5ms | ActiveRecord: 601.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:16:41 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (1847.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 2110ms (Views: 230.3ms | ActiveRecord: 1847.2ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:16:55 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (189.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 223ms (Views: 20.4ms | ActiveRecord: 189.2ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:18:10 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (952.5ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 1014ms (Views: 53.2ms | ActiveRecord: 952.5ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:26:43 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (125.6ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 324ms (Views: 189.7ms | ActiveRecord: 125.6ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:27:13 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (3.0ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 76ms (Views: 69.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:27:55 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (165.4ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 211ms (Views: 37.7ms | ActiveRecord: 165.4ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:28:26 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (163.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 264ms (Views: 91.9ms | ActiveRecord: 163.9ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-05 16:29:07 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (157.0ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 217ms (Views: 50.5ms | ActiveRecord: 157.0ms)
+
+

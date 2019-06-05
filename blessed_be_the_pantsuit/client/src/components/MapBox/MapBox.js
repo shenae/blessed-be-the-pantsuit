@@ -1,114 +1,112 @@
 import React, { Component } from 'react';
-// import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-// import BikeSharePin from './BikeSharingPin.js';
-// import BikeShareInfo from './BikeShareInfo';
-// import DropDown from './DropDown';
+import ReactMapGL, { Marker, Popup } from 'react-map-gl';
+import MapBoxPin from './MapBoxPin.js';
+import PoliticiansInfo from './PoliticiansInfo.js';
+import DropDownList from './DropDownList.js';
 
 
 
-// const mapboxglToken = process.env.REACT_APP_MAPBOX;
+const mapboxglToken = process.env.REACT_APP_MAPBOX;
 
-// class MapBox extends Component {
-//     constructor(props) {
-//       super(props);
-//       this.state = {
-//         viewport: {
-//           width: '50vw',
-//           height: '60vh',
-//           latitude: 40.7306,
-//           longitude: -73.968285,
-//           zoom: 7
-//         },
-//         popupInfo: null
-//       }
+class MapBox extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        viewport: {
+          width: '80vw',
+          height: '60vh',
+          latitude: 42.165726,
+          longitude: -69.948051,
+          zoom: 5
+        }
+      }
+    };
+
+  //dropdown list 
+  const mapLocations = {
+    'California': {
+      //  bearing: 27,
+        center: [42.0095169, -114.131211],
+        zoom: 5,
+        },
+    'Wisconsin': {
+        bearing: 27,
+        center: [44.268543, -89.616508],
+        zoom: 5,
+        },
+
+    'New York': {
+    //  bearing: 27,
+        center: [42.165726, -74.948051],
+        zoom: 5,
+        },
+}
+
+handleClick() {
+  let mapLocationNames = Object.keys(mapLocations);
+  for (var i = 0; i < mapLocationNames.length; i++) {
+      let locationName = mapLocationNames[i];
+          if (isElementOnScreen(locationName)) {
+              setActiveChapter(locationName);
+          break;
+      }
+  }
+};
+
+let activeMapLocations = 'New York';
+    function setActiveChapter(mapLocations) {
+    if (mapLocations === activeMapLocations) return;
     
-//       this._renderMarker = this._renderMarker.bind(this);
-//       this._renderPopup = this._renderPopup.bind(this);
-//     };
-
-//     changeViewport = async (viewport) => {
-//       await this.setState(prevState => ({
-//         viewport: {
-//           ...prevState.viewport,
-//           latitude: viewport.latitude,
-//           longitude: viewport.longitude,
-//         },
-//       }))
-      
-//     }
-
-//     _renderMarker(bike, i) {
-//       const lat = bike.location.latitude;
-//       const lng = bike.location.longitude;
-//       const key= `bike-${i}`;
-
-//       return (
+    poliMap.flyTo(mapLocations[locationName]);
     
-//         <Marker key={key} longitude={lng} latitude={lat} >
-//           <BikeSharePin size={20} onClick={() => this.setState({popupInfo: bike})} />
-//         </Marker>
-//       );
-//     }
+    document.getElementById(locationName).setAttribute('class', 'active');
+    document.getElementById(activeMapLocations).setAttribute('class', '');
+    
+    let activeMapLocations = locationName;
+  }
 
-//     _renderPopup() {
-//       const {popupInfo} = this.state;
-     
-//       if (popupInfo!== null) {
-//         const lat = popupInfo.location.latitude;
-//         const lng = popupInfo.location.longitude;
+    function isElementOnScreen(id) {
+      var element = document.getElementById(id);
+      var bounds = element.getBoundingClientRect();
+      return bounds.top < window.innerHeight && bounds.bottom > 0;
+      }
+
+
+
   
-//         return popupInfo && (
-//           <Popup tipSize={10}
-//             anchor="top"
-//             longitude={lng}
-//             latitude={lat}
-//             onClose={() => this.setState({popupInfo: null})} >
-//             <BikeShareInfo info={popupInfo} />
-//           </Popup>
-//         );
-//       }
-//       }
-  
-//     render() {
+    render() {
     
-//       const { viewport } = this.state;
-//       const { bikeshare } = this.props;
-//        if (bikeshare) {
-//         return (
-//           <div class="tile is-ancestor">
-//             <div class="tile is-4 is-vertical is-parent">
-//               <div class="tile is-child box">
-//               <h4 class="title is-4">By Country </h4>
-//               <DropDown DropDownhandler={this.props.DropDownhandler} changeViewport={this.changeViewport}/><br></br>
-//                 <p>Select a country from the dropdown list to view the bike sharing locations in the map.</p>
-//             </div>
-//             <div class="tile is-child box">
-//             <h4 class="title is-4">About CircumVelo </h4>
-//               <p>Biking while traveling abroad is more eco-friendly than taking a taxi.  This app lists bike sharing sites by country. Click on any of the pins on the map to see the bike sharing company name, city and country.</p>
-//               </div>
-//               </div>
-//             <div class="tile is-parent">
-//             <div class="tile is-child box">
-//             <h4 class="title is-4">Map</h4>
-//               <ReactMapGL
-//               {...viewport}
-//               onViewportChange={(viewport) => this.setState({viewport})}
-//               mapboxApiAccessToken={mapboxglToken}
-//               mapStyle="mapbox://styles/shenae/cjuu1o9lf38bn1fqi1h93kulw">
-//               { bikeshare.map(this._renderMarker) }
-//               {this._renderPopup()}
-//               </ReactMapGL>
-//               </div>
-//             </div>
-//             </div>
-           
-//         )
-//        } else {
-//          return null
-//        }
+      const { viewport } = this.state;
+    
+        return (
+          <div>
+              <h4>By State </h4>
+              <DropDownList /><br></br>
+                <p>Select a state from the dropdown list to view the female politicians on the map.</p>
+          
+            <h4>Blessed Be the Pantsuit </h4>
+              <p>Placeholder text here.</p>
+            
+            <h4>Map</h4>
+              <ReactMapGL
+              {...viewport}
+              // onViewportChange={(viewport) => this.setState({viewport})}
+              mapboxApiAccessToken={mapboxglToken}
+              mapStyle="mapbox://styles/shenae/cjwi2w8on0a7e1cqvsemzxzot">
+              </ReactMapGL>
+              </div>
+              )
+       } //else {
+  //        return null
+  //      }
        
 
-//     }
-//   }
-      
+  //   }
+   }
+
+//map and website palette: Handmaid red #410401, medium gray #89726F, light gray/dust #BFA6A2
+//lighter red #86433E, light dusty rose #FFD5CC, almost puple brown #574143
+
+ 
+     
   export default MapBox;

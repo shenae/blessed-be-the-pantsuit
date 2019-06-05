@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import './App.css';
+// import MapBox from './components/MapBox/MapBox';
+import PoliticiansList from './components/PoliticiansList/PoliticiansList'
 
 class App extends Component {
   constructor() {
@@ -11,37 +13,44 @@ class App extends Component {
     };
   }
 
-  // componentDidMount = async () => {
-  //   const politicians = await axios.get('http://localhost:4567/politicians');
-  //   const politiciansData = politicians.data;
-  // }
-
-  componentDidMount = async () => {
+  getPoliticiansData = async () => {
     const politicians = await axios.get('http://localhost:4567/politicians');
     const politiciansData = politicians.data;
-    await console.log("politicians loading");
-    this.setState({politiciansData, politiciansDataLoaded: true}) 
-  };
-  
-  
-
-  showPoliticians() {
-    return this.state.politiciansData.map((politicians) => {
-      return (
-        <div key={politicians.id}>
-        <h3>{politicians.short_title} {politicians.first_name} {politicians.last_name}</h3>
-          <h4>({politicians.party}) {politicians.state}</h4> 
-        </div>
-      );
-    });
+    this.setState({
+      data: politiciansData,
+      politiciansDataLoaded: true
+    })
   }
 
+  componentDidMount = async () => {
+    this.getPoliticiansData()
+    // const politicians = await axios.get('http://localhost:4567/politicians');
+    // const politiciansData = politicians.data;
+    // // await console.log("politicians loading");
+    // this.setState({politiciansData, politiciansDataLoaded: true}) 
+  };
+
+  // showPoliticians = async () => {
+  //   return await this.state.politiciansData.map((politicians) => {
+  //     return (
+  //       <div key={politicians.id}>
+  //       <h3>{politicians.short_title} {politicians.first_name} {politicians.last_name}</h3>
+  //         <h4>({politicians.party}) {politicians.state}</h4> 
+  //       </div>
+  //     );
+  //   });
+  // }
+
   render() {
+
+    console.log(this.state)
+
     return (
       <div className="App">
-        <div>
-          {(this.state.politiciansDataLoaded) ? this.showPoliticians() : <p>Is this loading, though...</p>}
-        </div>
+
+        <PoliticiansList politicians={this.state.data}/>
+     
+        {/* <MapBox politicianShow={this.state.politiciansData} /> */}
       </div>
     );
   }
