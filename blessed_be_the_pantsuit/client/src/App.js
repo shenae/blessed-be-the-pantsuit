@@ -48,12 +48,13 @@ class App extends Component {
   render() {
 
     return (
+      
       <div className="columns">
         <div className="column">
         <PoliticiansList politicians={this.state.data}/>
-      </div>
+        </div>
       <div className="column">
-              <MapBox politicians={this.state.data} />
+            <MapBox politicians={this.state.data} />
       </div>
       <div className="column">
         <PoliticianForm politicians={this.state.data}/>
@@ -67,8 +68,7 @@ class App extends Component {
           {/* example <Route path="/:id" component={Child}/> */}
         </Switch>
 
-      </div>
-      
+</div>
     );
   }
 }

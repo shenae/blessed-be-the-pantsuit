@@ -1,7 +1,12 @@
 class UsersController < ApplicationController
+  #before_action only: [:show, :edit, :update, :destroy]
     def index
       @users = User.all
       render json: @users, status: :ok
+    end
+
+    def show
+
     end
 
     def new
@@ -24,8 +29,12 @@ class UsersController < ApplicationController
       end
     end
 
-    private
+    def destroy
+      @user.destroy
+      redirect_to user_path
+    end
 
+  private
   def user_params
     params.require(:user).permit(:username, :email)
     # when auth is created
