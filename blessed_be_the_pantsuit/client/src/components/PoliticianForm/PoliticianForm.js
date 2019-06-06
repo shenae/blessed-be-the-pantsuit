@@ -19,7 +19,7 @@ const PoliticianForm = (props) => (
         <div class="field">
         <label class="label">Body</label>
         <div class="control">
-            <textarea class="input" type="email" placeholder="e.g. Dear Governor ..."/>
+            <textarea class="input" type="text" placeholder="e.g. Dear Governor ..."/>
         </div>
         </div>
     </div>

@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router';
 import axios from 'axios'
 // import './App.css';
 import MapBox from './components/MapBox/MapBox';
 import PoliticiansList from './components/PoliticiansList/PoliticiansList'
 import PoliticianForm from './components/PoliticianForm/PoliticianForm'
+import Politician from './components/Politician/Politician';
+import Details from './components/Politician/Details';
 
 class App extends Component {
   constructor() {
@@ -44,25 +47,31 @@ class App extends Component {
 
   render() {
 
-    console.log(this.state)
-
     return (
       <div className="columns">
         <div className="column">
         <PoliticiansList politicians={this.state.data}/>
       </div>
       <div className="column">
-                <MapBox politicians={this.state.data} />
+              <MapBox politicians={this.state.data} />
       </div>
       <div className="column">
         <PoliticianForm politicians={this.state.data}/>
       </div>
-
      
+        <Switch>
+          {/* there will only ever be one child here */}
+           <Route/>
+           {/* <Route exact path="/" component={App} /> */}
+          <Route path="/politicians/:id" component={ Details }/>
+          {/* example <Route path="/:id" component={Child}/> */}
+        </Switch>
 
       </div>
+      
     );
   }
 }
+
 
 export default App;
