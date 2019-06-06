@@ -54,3 +54,5 @@ politicians = Politician.create([
     "state": "MA"
 }
 ])
+
+user = User.new(username: 'shenaetest', email: 'shhnae@gmail.com')

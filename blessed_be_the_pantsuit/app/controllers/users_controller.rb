@@ -12,6 +12,8 @@ class UsersController < ApplicationController
       @user = User.new(user_params)
 
       if @user.save
+        # Deliver the signup email
+        UserNotifierMailer.send_welcome_email(@user).deliver
         redirect_to user_path(@user), notice: "New user added!"
         # of flash[:notice] = "New user was successfully created."
       else
@@ -21,6 +23,14 @@ class UsersController < ApplicationController
         #redirect_to new_user_path
       end
     end
+
+    private
+
+  def user_params
+    params.require(:user).permit(:username, :email)
+    # when auth is created
+    #params.require(:user).permit(:name, :email, :login)
+  end
 
   
     # def show
