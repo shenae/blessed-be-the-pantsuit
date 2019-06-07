@@ -12,11 +12,32 @@ export const loginUser = async (loginData) => {
     }
 }
 
-export const registerUser = async (registerData) => {
+export const registerUser = async (data) => {
+    // console.log('reg',registerData.newUser)
+    console.log(data)
     try {
-        const response = await axios.post(`${URL}/users`, registerData)
-        return response.data
+        const response = await axios.post(`${URL}/users`, data)
+        console.log("this is response: ", response);
+        return response
     } catch(error) {
         console.log("Registration error: ", error);
+    }
+}
+
+export const editUser = async (registerData) => {
+    try {
+        const response = await axios.put(`${URL}/users`, registerData)
+        return response.data
+    } catch(error) {
+        console.log("Update error: ", error);
+    }
+}
+
+export const deleteUser = async (id) => {
+    try {
+        const response = await axios.delete(`${URL}/users`, id)
+        return response.data
+    } catch(error) {
+        console.log("Deletion error: ", error);
     }
 }

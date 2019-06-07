@@ -7,6 +7,7 @@ import PoliticiansList from './components/PoliticiansList/PoliticiansList'
 import PoliticianForm from './components/PoliticianForm/PoliticianForm'
 import Politician from './components/Politician/Politician';
 import Details from './components/Politician/Details';
+import SignIn from './components/SignIn/SignIn';
 
 class App extends Component {
   constructor() {
@@ -53,6 +54,7 @@ class App extends Component {
         <div className="column">
         <PoliticiansList politicians={this.state.data}/>
         </div>
+        <SignIn />
       <div className="column">
             <MapBox politicians={this.state.data} />
       </div>

@@ -3747,3 +3747,380 @@ Processing by PoliticiansController#index as HTML
 Completed 200 OK in 85ms (Views: 67.0ms | ActiveRecord: 12.1ms)
 
 
+Started GET "/politicians" for ::1 at 2019-06-06 17:37:54 -0400
+  [1m[35m (22.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (14.8ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 184ms (Views: 35.9ms | ActiveRecord: 143.3ms)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2019-06-06 19:03:46 -0400
+  [1m[35m (162.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/politicians" for ::1 at 2019-06-06 19:34:25 -0400
+  [1m[35m (14.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (53.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 338ms (Views: 124.9ms | ActiveRecord: 199.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 19:35:28 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (347.3ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 442ms (Views: 84.5ms | ActiveRecord: 347.3ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 19:37:35 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (638.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 721ms (Views: 68.0ms | ActiveRecord: 638.1ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 19:40:26 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (119.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 188ms (Views: 50.6ms | ActiveRecord: 119.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 19:43:03 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (109.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 120ms (Views: 8.7ms | ActiveRecord: 109.7ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 19:44:13 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (42.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 60ms (Views: 16.1ms | ActiveRecord: 42.1ms)
+
+
+Started OPTIONS "/users" for ::1 at 2019-06-06 19:44:55 -0400
+Started POST "/users" for ::1 at 2019-06-06 19:44:55 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"tester", "email"=>"testing@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY", "user"=>{"username"=>"tester", "email"=>"testing@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY"}}
+Unpermitted parameters: :password, :city, :state
+  [1m[35m (22.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (32.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testing@fakemail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (13.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:19
+Completed 500 Internal Server Error in 722ms (ActiveRecord: 203.3ms)
+
+
+  
+NameError (undefined local variable or method `flash' for #<UsersController:0x00007f81e03c2710>):
+  
+app/controllers/users_controller.rb:25:in `create'
+Started POST "/users" for ::1 at 2019-06-06 19:45:03 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"tester", "email"=>"testing@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY", "user"=>{"username"=>"tester", "email"=>"testing@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY"}}
+Unpermitted parameters: :password, :city, :state
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:19
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "testing@fakemail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:19
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:19
+Completed 500 Internal Server Error in 253ms (ActiveRecord: 1.2ms)
+
+
+  
+NameError (undefined local variable or method `flash' for #<UsersController:0x00007f81dfb71408>):
+  
+app/controllers/users_controller.rb:25:in `create'
+Started GET "/users" for ::1 at 2019-06-06 19:45:59 -0400
+Processing by UsersController#index as */*
+  Parameters: {"{ \n\t\"user\": {\n\t\t\"username\": \"wayne\",\n\t\t\"email\": \"wayne@fakemail.com\",\n\t\t\"password\": \"fakepassword\",\n\t\t\"password_confirmation\": \"fakepassword\"\n\t}\n}"=>"[FILTERED]"}
+  [1m[36mUser Load (27.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 55ms (Views: 20.4ms | ActiveRecord: 27.9ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 19:48:10 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"tester", "email"=>"testing@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY", "user"=>{"username"=>"tester", "email"=>"testing@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY"}}
+Unpermitted parameters: :password, :city, :state
+Completed 204 No Content in 99ms (ActiveRecord: 196.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-06 19:48:14 -0400
+Processing by UsersController#index as */*
+  Parameters: {"{ \n\t\"user\": {\n\t\t\"username\": \"wayne\",\n\t\t\"email\": \"wayne@fakemail.com\",\n\t\t\"password\": \"fakepassword\",\n\t\t\"password_confirmation\": \"fakepassword\"\n\t}\n}"=>"[FILTERED]"}
+  [1m[36mUser Load (25.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 42ms (Views: 15.1ms | ActiveRecord: 25.8ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 19:48:57 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"tester", "email"=>"testing@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY", "user"=>{"username"=>"tester", "email"=>"testing@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY"}}
+Completed 204 No Content in 179ms (ActiveRecord: 16.1ms)
+
+
+Started GET "/users" for ::1 at 2019-06-06 19:49:34 -0400
+Processing by UsersController#index as */*
+  Parameters: {"{ \n\t\"user\": {\n\t\t\"username\": \"wayne\",\n\t\t\"email\": \"wayne@fakemail.com\",\n\t\t\"password\": \"fakepassword\",\n\t\t\"password_confirmation\": \"fakepassword\"\n\t}\n}"=>"[FILTERED]"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 58ms (Views: 42.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2019-06-06 19:53:35 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shenaesimmons/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (76.0ms)
+Completed 200 OK in 230ms (Views: 190.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-06 19:53:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (98.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 147ms (Views: 40.4ms | ActiveRecord: 98.7ms)
+
+
+Started OPTIONS "/users" for ::1 at 2019-06-06 19:55:24 -0400
+Started POST "/users" for ::1 at 2019-06-06 19:55:24 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"testing", "email"=>"test@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY", "user"=>{"username"=>"testing", "email"=>"test@fakemail.com", "password"=>"[FILTERED]", "city"=>"Brooklyn", "state"=>"NY"}}
+Completed 204 No Content in 112ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 19:57:26 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (267.9ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 1098ms (Views: 121.6ms | ActiveRecord: 939.3ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 19:57:40 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"calvin", "email"=>"fa", "password"=>"[FILTERED]", "city"=>"ddd", "state"=>"dd", "user"=>{"username"=>"calvin", "email"=>"fa", "password"=>"[FILTERED]", "city"=>"ddd", "state"=>"dd"}}
+Completed 204 No Content in 123ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 19:58:21 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (245.5ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 308ms (Views: 50.9ms | ActiveRecord: 245.5ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 19:58:49 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (284.5ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 358ms (Views: 58.2ms | ActiveRecord: 284.5ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 19:58:58 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"newUser"=>{"username"=>"aaaa", "email"=>"aaa", "password"=>"[FILTERED]", "city"=>"aaa", "state"=>"aa"}, "user"=>{}}
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:28:in `user_params'
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/politicians" for ::1 at 2019-06-06 19:59:33 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (560.7ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 588ms (Views: 25.7ms | ActiveRecord: 560.7ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 19:59:40 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"aaa", "email"=>"aaa", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a", "user"=>{"username"=>"aaa", "email"=>"aaa", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a"}}
+Completed 204 No Content in 97ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 20:00:45 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (22.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 41ms (Views: 16.8ms | ActiveRecord: 22.1ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 20:00:51 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"aaa", "email"=>"a", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a", "user"=>{"username"=>"aaa", "email"=>"a", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a"}}
+Completed 204 No Content in 108ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 20:03:16 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (2.8ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 20:03:31 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"bbb", "email"=>"bb", "password"=>"[FILTERED]", "city"=>"bbbbbb", "state"=>"bb", "user"=>{"username"=>"bbb", "email"=>"bb", "password"=>"[FILTERED]", "city"=>"bbbbbb", "state"=>"bb"}}
+Completed 204 No Content in 95ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-06 20:03:52 -0400
+Processing by UsersController#index as */*
+  Parameters: {"{ \n\t\"user\": {\n\t\t\"username\": \"wayne\",\n\t\t\"email\": \"wayne@fakemail.com\",\n\t\t\"password\": \"fakepassword\",\n\t\t\"password_confirmation\": \"fakepassword\"\n\t}\n}"=>"[FILTERED]"}
+  [1m[36mUser Load (40.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 81ms (Views: 29.7ms | ActiveRecord: 40.6ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 20:04:00 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"username"=>"bbb", "email"=>"bb", "password"=>"[FILTERED]", "city"=>"bbbbbb", "state"=>"bb", "user"=>{"username"=>"bbb", "email"=>"bb", "password"=>"[FILTERED]", "city"=>"bbbbbb", "state"=>"bb"}}
+Completed 204 No Content in 90ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/politicians" for ::1 at 2019-06-06 20:04:48 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (6.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 71ms (Views: 55.3ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 20:04:57 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"newUser"=>{"username"=>"a", "email"=>"aa", "password"=>"[FILTERED]", "city"=>"", "state"=>"a"}, "user"=>{}}
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:28:in `user_params'
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/users" for ::1 at 2019-06-06 20:05:06 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"newUser"=>{"username"=>"a", "email"=>"aa", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a"}, "user"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:28:in `user_params'
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/politicians" for ::1 at 2019-06-06 20:05:15 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (1.2ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 141ms (Views: 11.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 20:05:23 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"newUser"=>{"username"=>"a", "email"=>"a", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a"}, "user"=>{}}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:28:in `user_params'
+app/controllers/users_controller.rb:17:in `create'
+Started OPTIONS "/users" for ::1 at 2019-06-06 20:05:35 -0400
+Started POST "/users" for ::1 at 2019-06-06 20:05:35 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"newUser"=>{"username"=>"a", "email"=>"a", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a"}, "user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:28:in `user_params'
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/politicians" for ::1 at 2019-06-06 20:05:43 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (21.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 115ms (Views: 84.6ms | ActiveRecord: 21.1ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 20:05:50 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"newUser"=>{"username"=>"a", "email"=>"a", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a"}, "user"=>{}}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:28:in `user_params'
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/politicians" for ::1 at 2019-06-06 20:06:21 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (11.1ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 63ms (Views: 46.6ms | ActiveRecord: 11.1ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 20:06:38 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"newUser"=>{"username"=>"a", "email"=>"a", "password"=>"[FILTERED]", "city"=>"a", "state"=>"a"}, "user"=>{}}
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:28:in `user_params'
+app/controllers/users_controller.rb:17:in `create'
+Started GET "/politicians" for ::1 at 2019-06-06 20:06:53 -0400
+Processing by PoliticiansController#index as HTML
+  [1m[36mPolitician Load (1.5ms)[0m  [1m[34mSELECT "politicians".* FROM "politicians"[0m
+  ↳ app/controllers/politicians_controller.rb:5
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users" for ::1 at 2019-06-06 20:07:03 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"newUser"=>{"username"=>"cc", "email"=>"c", "password"=>"[FILTERED]", "city"=>"c", "state"=>"c"}, "user"=>{}}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:28:in `user_params'
+app/controllers/users_controller.rb:17:in `create'

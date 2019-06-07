@@ -16,17 +16,6 @@ class UsersController < ApplicationController
     def create
       @user = User.new(user_params)
 
-      if @user.save
-        # Deliver the signup email
-        UserNotifierMailer.send_welcome_email(@user).deliver
-        redirect_to user_path(@user), notice: "New user added!"
-        # of flash[:notice] = "New user was successfully created."
-      else
-        flash.now[:alert] = "Oops, there was a problem creating this account. Please try again." 
-        # pops up only once on page for error message and then disappears when page is refreshed
-        render :new
-        #redirect_to new_user_path
-      end
     end
 
     def destroy
@@ -36,7 +25,7 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:username, :email)
+    params.require(:user).permit(:username, :password, :email, :city, :state)
     # when auth is created
     #params.require(:user).permit(:name, :email, :login)
   end
