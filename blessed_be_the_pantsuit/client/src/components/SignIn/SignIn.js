@@ -26,13 +26,18 @@ createUser = async (event) => {
     event.preventDefault()
     const { username, email, password, city, state } = this.state;
     let newUser = {
-        username: username,
-        email: email,
-        password: password,
-        city: city,
-        state: state
+        "username": username,
+        "email": email,
+        "password": password,
+        "city": city,
+        "state": state
     } 
-    await registerUser({newUser});
+    try {
+    await registerUser(newUser);
+    alert("Success")
+    } catch(e) {
+        console.log(e)
+    }
 }
 
     render() {
@@ -40,9 +45,9 @@ createUser = async (event) => {
             <div>
                 <form onSubmit={this.createUser}>
                     <input type="text" name="username" value={this.state.username} placeholder="username" onChange={this.handleFormChange}/>
-                    <input type="text" name="email" value={this.state.email} placeholder="email" 
+                    <input type="email" name="email" value={this.state.email} placeholder="email" 
                     onChange={this.handleFormChange}/>
-                    <input type="text" name="password" value={this.state.password} placeholder="password" 
+                    <input type="password" name="password" value={this.state.password} placeholder="password" 
                     onChange={this.handleFormChange}/>
                     <input type="text" name="city" value={this.state.city} placeholder="city" 
                     onChange={this.handleFormChange}/>

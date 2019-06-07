@@ -24,9 +24,9 @@ export const registerUser = async (data) => {
     }
 }
 
-export const editUser = async (registerData) => {
+export const editUser = async (registerData, id) => {
     try {
-        const response = await axios.put(`${URL}/users`, registerData)
+        const response = await axios.put(`${URL}/users/${id}`, registerData)
         return response.data
     } catch(error) {
         console.log("Update error: ", error);
@@ -35,7 +35,7 @@ export const editUser = async (registerData) => {
 
 export const deleteUser = async (id) => {
     try {
-        const response = await axios.delete(`${URL}/users`, id)
+        const response = await axios.delete(`${URL}/users/${id}`)
         return response.data
     } catch(error) {
         console.log("Deletion error: ", error);
