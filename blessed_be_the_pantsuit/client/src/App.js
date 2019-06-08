@@ -8,6 +8,7 @@ import PoliticianForm from './components/PoliticianForm/PoliticianForm'
 import Politician from './components/Politician/Politician';
 import Details from './components/Politician/Details';
 import SignIn from './components/SignIn/SignIn';
+import Update from './components/Update/Update';
 
 class App extends Component {
   constructor() {
@@ -15,7 +16,14 @@ class App extends Component {
     this.state = {
       politiciansData: null,
       politiciansDataLoaded: false,
+      id: 0
     };
+  }
+
+  setUserId = async (id) => {
+    await this.setState({
+      id: id
+    })
   }
 
   getPoliticiansData = async () => {
@@ -32,33 +40,61 @@ class App extends Component {
     
   };
 
-
   render() {
-
     return (
-      
-      <div className="columns">
-        <div className="column">
-        <PoliticiansList politicians={this.state.data}/>
-        <Link to="/signup">Sign Up</Link>
-        <Switch>
-          {/* there will only ever be one child here */}
-           <Route path="/signup" render={() => <SignIn/> }/>
-           {/* <Route exact path="/" component={App} /> */}
-          <Route path="/politicians/:id" component={ Details }/>
-          {/* example <Route path="/:id" component={Child}/> */}
-        </Switch>
-        </div>
-        {/* <SignIn /> */}
-      <div className="column">
-            <MapBox politicians={this.state.data} />
+  <div>
+  <section class="hero is-dark is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+      BLESSED BE THE PANTSUIT
+      </h1>
+    </div>
+  </div>
+<div class="hero-foot">
+    <nav class="tabs">
+      <div class="container">
+        <ul align="left">
+          <li class="is-active" id="nav-links">
+         <Link to="/mapbox">Home</Link></li>
+         <li id="nav-links"><Link to="/signup">Sign Up</Link></li>
+          <li id="nav-links"><Link to="/politicians">Politicians</Link></li>
+          <li id="nav-links"><Link to="/forms">Forms</Link></li>
+          <li id="nav-links"><Link to="/mapbox">Map</Link></li>
+        </ul>
       </div>
-      <div className="column">
-        <PoliticianForm politicians={this.state.data}/>
-      </div>
-     
+    </nav>
+  </div>
+</section>
 
-</div>
+   <div>
+      <div class="tile-is-ancestor">
+        <div class="tile is-8">
+        <div class="tile is-parent">
+        <div class="tile is-child box">
+        <Switch>
+              {/* there will only ever be one child here */}
+              <Route path="/mapbox" render={() => <MapBox/> }/>
+              <Route path="/signup" render={() => <SignIn setUserId={this.setUserId}/>}/>
+              <Route path="/politicians" render={() => <PoliticiansList politicians={this.state.data}/> }/>
+              <Route path="/forms" render={() => <PoliticianForm/> }/>
+              {/* <Route exact path="/" component={App} /> */}
+              <Route path="/politicians/:id" component={ Details }/>
+              <Route path="/mapbox" component={ MapBox }/>
+              <Route path="/" component={ MapBox }/>
+              {/* <Route path="/update" render={() => <Update id={this.state.id}/> }/> */}
+              {/* example <Route path="/:id" component={Child}/> */}
+              </Switch>
+        {/* <MapBox politicians={this.state.data} /> */}
+        </div>
+        </div>
+
+      </div>
+    </div>
+    
+    </div>
+
+  </div>
     );
   }
 }

@@ -52,5 +52,17 @@ politicians = Politician.create([
     "url": "https://www.warren.senate.gov",
     "contact_form": "https://www.warren.senate.gov/?p=email_senator",
     "state": "MA"
+},
+{
+    "short_title": "Rep.",
+    "first_name": "Alexandria",
+    "last_name": "Ocasio-Cortez",
+    "gender": "F",
+    "party": "D",
+    "twitter_account": "RepAOC",
+    "url": "https://ocasio-cortez.house.gov/",
+    "contact_form": "https://ocasio-cortez.house.gov/contact",
+    "state": "NY"
 }
+
 ])

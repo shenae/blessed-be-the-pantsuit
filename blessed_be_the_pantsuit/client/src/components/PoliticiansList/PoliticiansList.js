@@ -14,14 +14,9 @@ const PoliticiansList = ({politicians}) => {
         window.open(`${value}`, "website", "width=200,height=200");
     }
 
-    //window.alert("This should be a website");
-
-    // const openPopup = async () => {
-    //     window.showModalDialog('{props.data.url}','test', '100px');
-    // }
-
     return(
         <div className="politician-details">
+        <p>Select a politician from the dropdown list to access their contact page.</p>
         <select onChange={openPopup}>
             <option>Select Politician</option>
             {data}
