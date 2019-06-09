@@ -10,9 +10,9 @@ class MapBox extends Component {
       this.state = {
         viewport: {
           width: '90vw',
-          height: '60vh',
-          latitude: 42.165726,
-          longitude: -69.948051,
+          height: '50vh',
+          latitude: 95.7129,
+          longitude: 37.0902,
           zoom: 5
         }
        
@@ -29,13 +29,16 @@ class MapBox extends Component {
               onViewportChange={(viewport) => this.setState({viewport})}
               mapboxApiAccessToken={mapboxglToken}
               mapStyle="mapbox://styles/shenae/cjwi2w8on0a7e1cqvsemzxzot">
-              <Marker latitude={37.78} longitude={-122.41} offsetLeft={-20} offsetTop={-10}>
+              <Marker latitude={42.36} longitude={-71.06} offsetLeft={-20} offsetTop={-10}>
+          <div>Over here</div>
+        </Marker>
+        <Marker latitude={40.74} longitude={-73.89} offsetLeft={-20} offsetTop={-10}>
           <div>You are here</div>
         </Marker>
               </ReactMapGL>
               )
        }
    }
-
+  
      
   export default MapBox;

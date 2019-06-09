@@ -46,7 +46,7 @@ class App extends Component {
   <section class="hero is-dark is-small">
   <div class="hero-body">
     <div class="container">
-      <h1 class="title">
+      <h1 class="title" id="links">
       BLESSED BE THE PANTSUIT
       </h1>
     </div>
@@ -55,12 +55,12 @@ class App extends Component {
     <nav class="tabs">
       <div class="container">
         <ul align="left">
-          <li class="is-active" id="nav-links">
+          <li class="is-active" id="links">
          <Link to="/mapbox">Home</Link></li>
-         <li id="nav-links"><Link to="/signup">Sign Up</Link></li>
-          <li id="nav-links"><Link to="/politicians">Politicians</Link></li>
-          <li id="nav-links"><Link to="/forms">Forms</Link></li>
-          <li id="nav-links"><Link to="/mapbox">Map</Link></li>
+         <li id="links"><Link to="/signup">Sign Up</Link></li>
+          <li id="links"><Link to="/politicians">Politicians</Link></li>
+          <li id="links"><Link to="/forms">Forms</Link></li>
+          <li id="links"><Link to="/mapbox">Map</Link></li>
         </ul>
       </div>
     </nav>
@@ -93,8 +93,9 @@ class App extends Component {
     </div>
     
     </div>
+  
+</div>
 
-  </div>
     );
   }
 }

@@ -43,8 +43,8 @@ createUser = async (event) => {
     })
     console.log(this.state.id)
     await this.props.setUserId(this.state.id)
-    } catch(e) {
-        console.log(e)
+    } catch(error) {
+        console.log(error)
     }
 }
 

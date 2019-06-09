@@ -4,7 +4,6 @@ const URL = 'http://localhost:4567';
 
 export const loginUser = async (loginData) => {
     try {
-
         const response = await axios.post(`${URL}/auth/login`, loginData)
         return response.data
     } catch(error) {
@@ -13,11 +12,9 @@ export const loginUser = async (loginData) => {
 }
 
 export const registerUser = async (data) => {
-    // console.log('reg',registerData.newUser)
     console.log(data)
     try {
         const response = await axios.post(`${URL}/users`, data)
-        console.log("this is response: ", response);
         return response
     } catch(error) {
         console.log("Registration error: ", error);
