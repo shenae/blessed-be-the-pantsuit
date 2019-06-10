@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Politician.delete_all
+
 politicians = Politician.create([
 
 {
@@ -65,4 +67,4 @@ politicians = Politician.create([
     "state": "NY"
 }
 
-])
+]);

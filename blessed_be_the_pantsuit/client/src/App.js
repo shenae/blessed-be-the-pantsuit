@@ -6,7 +6,7 @@ import MapBox from './components/MapBox/MapBox';
 import PoliticiansList from './components/PoliticiansList/PoliticiansList'
 import PoliticianForm from './components/PoliticianForm/PoliticianForm'
 import Politician from './components/Politician/Politician';
-import Details from './components/Politician/Details';
+//import Details from './components/Politician/Details';
 import SignIn from './components/SignIn/SignIn';
 import Update from './components/Update/Update';
 
@@ -79,7 +79,7 @@ class App extends Component {
               <Route path="/politicians" render={() => <PoliticiansList politicians={this.state.data}/> }/>
               <Route path="/forms" render={() => <PoliticianForm/> }/>
               {/* <Route exact path="/" component={App} /> */}
-              <Route path="/politicians/:id" component={ Details }/>
+              {/* <Route path="/politicians/:id" component={ Details }/> */}
               <Route path="/mapbox" component={ MapBox }/>
               <Route path="/" component={ MapBox }/>
               {/* <Route path="/update" render={() => <Update id={this.state.id}/> }/> */}

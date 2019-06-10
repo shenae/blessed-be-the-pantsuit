@@ -37,6 +37,7 @@ createUser = async (event) => {
     try {
     let createdUser = await registerUser(newUser);
     alert("Success")
+    // send new user to update page or mapbox page
     this.setState({
         created: true,
         id: createdUser.data.id
@@ -66,7 +67,7 @@ createUser = async (event) => {
 
                     <div class="field">
                     <div class="control has-icons-left has-icons-right">
-                    <input class="input is-small" type="email" name="email" value={this.state.email} placeholder="email" 
+                    <input class="input is-small" type="email" name="email" value={this.state.email} placeholder="enter valid email" 
                     onChange={this.handleFormChange}/>
                     <span class="icon is-left">
                         <i class="fas fa-envelope"></i>
