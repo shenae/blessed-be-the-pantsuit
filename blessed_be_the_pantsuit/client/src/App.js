@@ -9,6 +9,7 @@ import Politician from './components/Politician/Politician';
 //import Details from './components/Politician/Details';
 import SignIn from './components/SignIn/SignIn';
 import Update from './components/Update/Update';
+import About from './components/About/About';
 
 class App extends Component {
   constructor() {
@@ -61,6 +62,7 @@ class App extends Component {
           <li id="links"><Link to="/politicians">Politicians</Link></li>
           <li id="links"><Link to="/forms">Forms</Link></li>
           <li id="links"><Link to="/mapbox">Map</Link></li>
+          <li id="links"><Link to="/about">About</Link></li>
         </ul>
       </div>
     </nav>
@@ -78,14 +80,11 @@ class App extends Component {
               <Route path="/signup" render={() => <SignIn setUserId={this.setUserId}/>}/>
               <Route path="/politicians" render={() => <PoliticiansList politicians={this.state.data}/> }/>
               <Route path="/forms" render={() => <PoliticianForm/> }/>
-              {/* <Route exact path="/" component={App} /> */}
-              {/* <Route path="/politicians/:id" component={ Details }/> */}
+              <Route path="/about" render={() => <About/> }/>
               <Route path="/mapbox" component={ MapBox }/>
               <Route path="/" component={ MapBox }/>
-              {/* <Route path="/update" render={() => <Update id={this.state.id}/> }/> */}
-              {/* example <Route path="/:id" component={Child}/> */}
+              
               </Switch>
-        {/* <MapBox politicians={this.state.data} /> */}
         </div>
         </div>
 

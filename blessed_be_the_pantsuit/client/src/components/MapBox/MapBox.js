@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
-import SenatorHarris from '../Politician/SenatorHarris';
-import RepAOC from '../Politician/RepAOC';
 
 
 const mapboxglToken = process.env.REACT_APP_MAPBOX;
@@ -31,17 +29,16 @@ class MapBox extends Component {
               onViewportChange={(viewport) => this.setState({viewport})}
               mapboxApiAccessToken={mapboxglToken}
               mapStyle="mapbox://styles/shenae/cjwi2w8on0a7e1cqvsemzxzot">
-              <Marker latitude={42.36} longitude={-71.06} offsetLeft={-20} offsetTop={-10}>
-          <div>warren</div>
+              <Marker latitude={42.36} longitude={-71.06} offsetLeft={-20} offsetTop={-10} alt="Senator Eliabeth Warren">
+          <div></div>
         </Marker>
-        <Marker latitude={40.74} longitude={-73.89} offsetLeft={-20} offsetTop={-10}>
-          <div><RepAOC /></div>
+        <Marker latitude={40.74} longitude={-73.89} offsetLeft={-20} offsetTop={-10} alt="Rep Alexandria Ocasio-Cortez">
+          <div></div>
         </Marker>
-        <Marker latitude={40.74} longitude={-73.97} offsetLeft={-30} offsetTop={-10}>
-          <div>gillibrand</div>
+        <Marker latitude={40.74} longitude={-73.97} offsetLeft={-30} offsetTop={-10} alt="Senator Kristen Gillebrand">
+          <div></div>
         </Marker>
-        <Marker latitude={37.79} longitude={-122.40} offsetLeft={-20} offsetTop={-10}>
-          <div><SenatorHarris /></div>
+        <Marker latitude={37.79} longitude={-122.40} offsetLeft={-20} offsetTop={-10} alt="Senator Kamala Harris">
         </Marker>
               </ReactMapGL>
               )

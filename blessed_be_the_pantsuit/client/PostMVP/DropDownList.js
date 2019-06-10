@@ -1,5 +1,5 @@
 import React from 'react';
-import MapBox from './MapBox';
+import MapBox from '../src/components/MapBox/MapBox';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 
 

@@ -16,7 +16,7 @@ const PoliticiansList = ({politicians}) => {
 
     return(
         <div className="politician-details">
-        <p>Select a politician from the dropdown list to access their contact page.</p>
+        <p>Select a female politician from the dropdown list to access their contact page.</p>
         <select onChange={openPopup}>
             <option>Select Politician</option>
             {data}

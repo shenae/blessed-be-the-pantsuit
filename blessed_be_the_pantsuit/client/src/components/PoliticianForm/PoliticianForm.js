@@ -12,9 +12,11 @@ class PoliticianForm extends Component {
       subject: "",
       message: ""
     }
+
+
   }
 
-handleFormSubmit(event) {
+handleFormSubmit=(event) => {
   event.preventDefault()
     const { name, email, subject, message } = this.state;
   
@@ -32,9 +34,10 @@ handleFormSubmit(event) {
     'user_T0Fs9kXIV9GrXf7fdG95W'
     )
     this.resetForm()
+    alert("Success")
  }
 
- resetForm() {
+ resetForm=() => {
   this.setState({
     name: '',
     email: '',
@@ -49,7 +52,7 @@ handleChange = (param, event) => {
 render() {
   return (
   <div>
-      <form onSubmit={this.handleFormSubmit.bind(this)}>
+      <form onSubmit={this.handleFormSubmit}>
           <div class="field is-horizontal">
             <label class="label" id="label-form">Name</label>
             <input class="input" type="text" value={this.state.name} 
@@ -71,11 +74,11 @@ render() {
             <textarea class="textarea" placeholder="10 lines of textarea" rows="10" value="Please send this drafted
             email to your state governor: 
               Dear Governor, 
-              I am writing this email... " readonly
-              onChange={this.handleChange.bind(this, 'message')} ></textarea>
+              I am writing to you because women’s rights need to be reinforced to promote legal, social and financial equality. Women are constantly degraded by society and legal laws, and are often reprimanded with low pay.  According to, American Civil Liberties Union, “Women still just make 78 cents for every dollar earned by men. Black women earn only 64 cents and Latinas only 54 cents for each dollar earned by white men”.  I implore you to pass more legislation to establish equal pay in the workforce.  Making the changes will not only benefit the women of our state but also the women of this country." readonly
+              onChange={(e) => this.handleChange(this.state, e)} ></textarea>
             </div>
             </div>
-        <button type="Submit">Submit</button>
+        <input type="submit"/>
       </form>
     </div>
 
